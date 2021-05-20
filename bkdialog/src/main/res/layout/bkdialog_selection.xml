@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/BKDialogParentLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bkdialog_layoutHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/bkdialog_title"
+            style="@style/BKDialogTitle"
+            android:text="Selection Dialog Title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/BKDialogDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bkdialog_title" />
+
+        <EditText
+            android:id="@+id/bkdialog_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8bdp"
+            android:layout_weight="1"
+            android:background="@drawable/bkdialog_bg_search"
+            android:drawableLeft="@drawable/bkdialog_icon_search"
+            android:drawablePadding="@dimen/_8bdp"
+            android:hint="Search here..."
+            android:inputType="textCapWords"
+            android:padding="@dimen/_8bdp"
+            android:textSize="@dimen/_12bsp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+            android:id="@+id/bkdialog_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8bdp"
+            android:text="Dialog Message"
+            android:textColor="@color/bkDialog_text_msg"
+            android:textSize="@dimen/_12bsp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bkdialog_search" />
+
+        <TextView
+            android:id="@+id/bkdialog_tvNoRecordFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5bdp"
+            android:gravity="center"
+            android:padding="@dimen/_8bdp"
+            android:text="No Record Found !"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bkdialog_msg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bkdialog_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bkdialog_layoutHead"
+        android:layout_marginLeft="@dimen/_8bdp"
+        android:layout_marginTop="@dimen/_5bdp"
+        android:layout_marginRight="@dimen/_8bdp"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/_5bdp"
+        android:paddingBottom="@dimen/_10bdp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

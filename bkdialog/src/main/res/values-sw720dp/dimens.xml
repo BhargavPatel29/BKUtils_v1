@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="drawable_ic_size">@dimen/_13sdp</dimen>
+    <dimen name="drawable_ic_size_mini">@dimen/_11sdp</dimen>
+
+    <!-- 1.4sdp = 1bdp -->
+
+    <dimen name="_1bdp">@dimen/_1sdp</dimen>
+    <dimen name="_2bdp">@dimen/_1sdp</dimen>
+    <dimen name="_3bdp">@dimen/_2sdp</dimen>
+    <dimen name="_4bdp">@dimen/_2sdp</dimen>
+    <dimen name="_5bdp">@dimen/_3sdp</dimen>
+    <dimen name="_6bdp">@dimen/_4sdp</dimen>
+    <dimen name="_7bdp">@dimen/_5sdp</dimen>
+    <dimen name="_8bdp">@dimen/_5sdp</dimen>
+    <dimen name="_9bdp">@dimen/_6sdp</dimen>
+    <dimen name="_10bdp">@dimen/_7sdp</dimen>
+    <dimen name="_11bdp">@dimen/_7sdp</dimen>
+    <dimen name="_12bdp">@dimen/_8sdp</dimen>
+    <dimen name="_13bdp">@dimen/_9sdp</dimen>
+    <dimen name="_14bdp">@dimen/_10sdp</dimen>
+    <dimen name="_15bdp">@dimen/_10sdp</dimen>
+    <dimen name="_16bdp">@dimen/_11sdp</dimen>
+    <dimen name="_17bdp">@dimen/_12sdp</dimen>
+    <dimen name="_18bdp">@dimen/_12sdp</dimen>
+    <dimen name="_19bdp">@dimen/_13sdp</dimen>
+    <dimen name="_20bdp">@dimen/_14sdp</dimen>
+    <dimen name="_21bdp">@dimen/_14sdp</dimen>
+    <dimen name="_22bdp">@dimen/_15sdp</dimen>
+    <dimen name="_23bdp">@dimen/_16sdp</dimen>
+    <dimen name="_24bdp">@dimen/_17sdp</dimen>
+    <dimen name="_25bdp">@dimen/_17sdp</dimen>
+    <dimen name="_26bdp">@dimen/_18sdp</dimen>
+    <dimen name="_27bdp">@dimen/_19sdp</dimen>
+    <dimen name="_28bdp">@dimen/_20sdp</dimen>
+    <dimen name="_29bdp">@dimen/_20sdp</dimen>
+    <dimen name="_30bdp">@dimen/_21sdp</dimen>
+
+    <dimen name="_33bdp">@dimen/_23sdp</dimen>
+    <dimen name="_35bdp">@dimen/_25sdp</dimen>
+    <dimen name="_40bdp">@dimen/_30sdp</dimen>
+    <dimen name="_43bdp">@dimen/_31sdp</dimen>
+    <dimen name="_45bdp">@dimen/_32sdp</dimen>
+    <dimen name="_50bdp">@dimen/_35sdp</dimen>
+    <dimen name="_55bdp">@dimen/_40sdp</dimen>
+    <dimen name="_60bdp">@dimen/_40sdp</dimen>
+    <dimen name="_65bdp">@dimen/_45sdp</dimen>
+    <dimen name="_70bdp">@dimen/_50sdp</dimen>
+    <dimen name="_75bdp">@dimen/_55sdp</dimen>
+    <dimen name="_80bdp">@dimen/_60sdp</dimen>
+    <dimen name="_85bdp">@dimen/_60sdp</dimen>
+    <dimen name="_90bdp">@dimen/_65sdp</dimen>
+    <dimen name="_100bdp">@dimen/_70sdp</dimen>
+    <dimen name="_110bdp">@dimen/_80sdp</dimen>
+    <dimen name="_120bdp">@dimen/_85sdp</dimen>
+    <dimen name="_130bdp">@dimen/_80sdp</dimen>
+    <dimen name="_140bdp">@dimen/_100sdp</dimen>
+    <dimen name="_150bdp">@dimen/_110sdp</dimen>
+    <dimen name="_160bdp">@dimen/_115sdp</dimen>
+    <dimen name="_170bdp">@dimen/_121sdp</dimen>
+    <dimen name="_200bdp">@dimen/_142sdp</dimen>
+    <dimen name="_240bdp">@dimen/_170sdp</dimen>
+    <dimen name="_350bdp">@dimen/_250sdp</dimen>
+
+
+    <!-- 1.5ssp = 1bsp -->
+
+    <dimen name="_1bsp">@dimen/_1ssp</dimen>
+    <dimen name="_2bsp">@dimen/_1ssp</dimen>
+    <dimen name="_3bsp">@dimen/_2ssp</dimen>
+    <dimen name="_4bsp">@dimen/_2ssp</dimen>
+    <dimen name="_5bsp">@dimen/_3ssp</dimen>
+    <dimen name="_6bsp">@dimen/_4ssp</dimen>
+    <dimen name="_7bsp">@dimen/_4ssp</dimen>
+    <dimen name="_8bsp">@dimen/_5ssp</dimen>
+    <dimen name="_9bsp">@dimen/_6ssp</dimen>
+    <dimen name="_10bsp">@dimen/_6ssp</dimen>
+    <dimen name="_11bsp">@dimen/_7ssp</dimen>
+    <dimen name="_12bsp">@dimen/_8ssp</dimen>
+    <dimen name="_13bsp">@dimen/_8ssp</dimen>
+    <dimen name="_14bsp">@dimen/_9ssp</dimen>
+    <dimen name="_15bsp">@dimen/_10ssp</dimen>
+    <dimen name="_16bsp">@dimen/_10ssp</dimen>
+    <dimen name="_17bsp">@dimen/_11ssp</dimen>
+    <dimen name="_18bsp">@dimen/_12ssp</dimen>
+    <dimen name="_19bsp">@dimen/_12ssp</dimen>
+    <dimen name="_20bsp">@dimen/_13ssp</dimen>
+    <dimen name="_21bsp">@dimen/_14ssp</dimen>
+    <dimen name="_22bsp">@dimen/_14ssp</dimen>
+    <dimen name="_23bsp">@dimen/_15ssp</dimen>
+    <dimen name="_24bsp">@dimen/_16ssp</dimen>
+    <dimen name="_25bsp">@dimen/_16ssp</dimen>
+    <dimen name="_26bsp">@dimen/_17ssp</dimen>
+    <dimen name="_27bsp">@dimen/_18ssp</dimen>
+    <dimen name="_28bsp">@dimen/_18ssp</dimen>
+    <dimen name="_29bsp">@dimen/_19ssp</dimen>
+    <dimen name="_30bsp">@dimen/_20ssp</dimen>
+</resources>

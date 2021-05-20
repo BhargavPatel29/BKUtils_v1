@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_200">#4285F4</color>
+    <color name="colorPrimary_500">#4285F4</color>
+    <color name="colorPrimary_700">#4285F4</color>
+    <color name="colorAccent_500">#B146C2</color>
+    <color name="colorAccent_700">#AB47BC</color>
+    <color name="colorPrimaryTrans_500">#CC4285F4</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

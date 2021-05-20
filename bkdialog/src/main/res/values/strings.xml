@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BKUtils</string>
+
+    <string name="bkDialog_ok">OK</string>
+    <string name="bkDialog_cancel">Cancel</string>
+    <string name="bkDialog_loading">Please Wait\nLoading…</string>
+</resources>
