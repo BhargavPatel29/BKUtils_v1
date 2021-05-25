@@ -34,6 +34,8 @@ public class BKDialogSelectAdapter extends RecyclerView.Adapter<BKDialogSelectAd
     public void setItemList(List<BKDialogRowItemVo> itemList){
         this.itemVos = itemList;
         this.listFiltered = itemList;
+        this.filterQueryCd = new ArrayList<String>();
+        this.filterQueryNm = new ArrayList<String>();
     }
 
     public void setRowType(int rowType){
