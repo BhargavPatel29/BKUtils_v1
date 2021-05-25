@@ -42,7 +42,7 @@
         android:padding="@dimen/_7bdp"
         android:text="Name"
         android:textColor="@color/bkDialog_text_button"
-        android:textSize="@dimen/_11bsp"
+        android:textSize="@dimen/_12bsp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvName"
