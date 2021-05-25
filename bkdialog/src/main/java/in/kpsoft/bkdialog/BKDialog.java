@@ -179,7 +179,7 @@ public class BKDialog {
     //==============================================================================================
     //==============================================================================================
 
-    public Dialog selectionDialog(String title, ArrayList<BKDialogRowItemVo> itemVos, BKDialogSelectAdapter.AdapterListener listener, boolean searchable) {
+    public Dialog selectionDialog(String title, ArrayList<BKDialogRowItemVo> itemVos, BKDialogSelectAdapter.AdapterListener listener, boolean searchable, int color) {
         Dialog dialog = new Dialog(context);
         dialog.setContentView(R.layout.bkdialog_selection);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -197,6 +197,7 @@ public class BKDialog {
         RecyclerView recyclerView = (RecyclerView) dialog.findViewById(R.id.bkdialog_recyclerView);
 
         tv_dialogTitle.setText(title);
+        tv_dialogTitle.setTextColor(color);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
         recyclerView.addItemDecoration(new BKListItemDivider(context, DividerItemDecoration.VERTICAL, 0));
         BKDialogSelectAdapter bkDialogSelectAdapter = new BKDialogSelectAdapter(context, listener);
@@ -204,7 +205,7 @@ public class BKDialog {
 
         bkDialogSelectAdapter.setItemList(itemVos);
         bkDialogSelectAdapter.notifyDataSetChanged();
-        tv_noRecordFound.setVisibility((itemVos != null && itemVos.size() > 0) ? View.VISIBLE : View.GONE);
+        tv_noRecordFound.setVisibility((itemVos != null && itemVos.size() > 0) ? View.GONE : View.VISIBLE);
 
         return dialog;
     }

@@ -20,6 +20,6 @@ public class MainActivity extends AppCompatActivity {
         context = MainActivity.this;
         BKToast.makeText(context, "Simple Toast", BKToast.LENGTH_LONG, BKToast.TYPE_SUCCESS).show();
         String today = BKCalender.getCurrentDate("dd-MM-yyyy");
-        new BKDialog(context).simpleAlert("This is simple alert!\n"+today, "This is simple alert message long description.", BKDialog.DIALOG_SUCCESS).show();
+        new BKDialog(context).simpleAlert("This is simple alert!\n"+today, "This is simple alert message long description.").show();
     }
 }
