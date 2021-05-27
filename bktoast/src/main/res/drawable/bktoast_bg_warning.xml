@@ -5,7 +5,7 @@
     tools:targetApi="lollipop">
     <item>
         <shape android:shape="rectangle">
-            <corners android:radius="100dp" />
+            <corners android:radius="20dp" />
             <solid android:color="@color/bkToast_warning" />
         </shape>
     </item>
