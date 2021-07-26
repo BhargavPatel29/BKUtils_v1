@@ -31,20 +31,24 @@ public class BKCalender {
 
     public static DatePickerDialog datePickerDialog(Context context, String inputDate, String inputFormat, DatePickerDialog.OnDateSetListener listener) {
         try {
-            String date = BKCalender.convertFormat(inputFormat, "yyyyMMdd", inputDate);
+            String date = (inputDate != null && inputDate.length() > 0)
+                    ? BKCalender.convertFormat(inputFormat, "yyyyMMdd", inputDate)
+                    : BKCalender.getCurrentDate("yyyyMMdd");
             int year = Integer.parseInt(date.substring(0, 4));
             int month = Integer.parseInt(date.substring(4, 6));
             int day = Integer.parseInt(date.substring(6, 8));
             return new DatePickerDialog(context, listener, year, month - 1, day);
         } catch (Exception e) {
             e.printStackTrace();
-            return new DatePickerDialog(context, listener, 2021, 2 - 1, 1);
+            return new DatePickerDialog(context, listener, 2021, 0, 1);
         }
     }
 
     public static TimePickerDialog timePickerDialog(Context context, String inputTime, String inputFormat, TimePickerDialog.OnTimeSetListener listener) {
         try {
-            String time = BKCalender.convertFormat(inputFormat, "HHmmss", inputTime);
+            String time = (inputTime != null && inputTime.length() > 0)
+                    ? BKCalender.convertFormat(inputFormat, "HHmmss", inputTime)
+                    : BKCalender.getCurrentDate("HHmmss");
             int hour = Integer.parseInt(time.substring(0, 2));
             int minute = Integer.parseInt(time.substring(2, 4));
             int second = Integer.parseInt(time.substring(4, 6));
