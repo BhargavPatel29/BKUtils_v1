@@ -79,6 +79,25 @@ public class BKPref {
     }
 
     //==============================================================================================
+    //Float Values
+
+    public static void setValue(Context context, String key, float value) {
+        BKPref.openPref(context);
+        SharedPreferences.Editor prefsPrivateEditor = BKPref.sharedPreferences.edit();
+        prefsPrivateEditor.putFloat(key, value);
+        prefsPrivateEditor.apply();
+        prefsPrivateEditor = null;
+        BKPref.sharedPreferences = null;
+    }
+
+    public static float getValue(Context context, String key, float defaultValue) {
+        BKPref.openPref(context);
+        float result = BKPref.sharedPreferences.getFloat(key, defaultValue);
+        BKPref.sharedPreferences = null;
+        return result;
+    }
+
+    //==============================================================================================
     //Boolean Values
 
     public static boolean getValue(Context context, String key, boolean defaultValue) {

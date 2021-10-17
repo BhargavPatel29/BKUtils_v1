@@ -3,15 +3,33 @@ package in.kpsoft.bkcalender;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
 
 import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.TimeZone;
 
 public class BKCalender {
 
-    public static String getCurrentDate(String dateFormat){
-        return new SimpleDateFormat(dateFormat, Locale.US).format(Calendar.getInstance().getTime());
+    public static String getCurrentDate(String dateFormat) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            Instant instant = Instant.now();
+            ZoneId zoneId = ZoneId.of("Asia/Kolkata");
+            ZonedDateTime zonedDateTime = ZonedDateTime.ofInstant(instant, zoneId);
+            return zonedDateTime.format(DateTimeFormatter.ofPattern(dateFormat));
+        } else {
+            TimeZone timeZone = TimeZone.getTimeZone("GMT+05:30");
+            TimeZone.setDefault(timeZone); //Not Working
+            return new SimpleDateFormat(dateFormat, Locale.US).format(Calendar.getInstance(timeZone).getTime());
+        }
     }
 
     public static String convertFormat(String inputFormat, String outputFormat, String string) {
