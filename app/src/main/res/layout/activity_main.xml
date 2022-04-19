@@ -6,14 +6,206 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textview"
+            style="@style/BKTheme_EditTextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10bdp"
+            android:text="Hello World!" />
+
+        <TextView
+            style="@style/BKTheme_TitleText"
+            android:layout_margin="@dimen/_10dp"
+            android:text="This is title text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BKTheme_TableHeadText"
+                android:text="Heading" />
+
+            <TextView
+                style="@style/BKTheme_TableHeadText"
+                android:text="Heading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BKTheme_TableBodyText"
+                android:text="Heading" />
+
+            <TextView
+                style="@style/BKTheme_TableBodyText"
+                android:text="Heading" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/BKTheme_TextInputLayout"
+            android:layout_margin="@dimen/_10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_partyName"
+                style="@style/BKTheme_TextInputEditText"
+                android:hint="Firm Name"
+                android:inputType="textCapWords"
+                android:maxLength="50" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/BKTheme_ButtonSolid_primary_square"
+                android:text="Primary" />
+
+            <TextView
+                style="@style/BKTheme_ButtonSolid_primary_square2"
+                android:text="PRIMARY" />
+
+            <Button
+                style="@style/BKTheme_ButtonBorder_primary_round"
+                android:text="Primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/BKTheme_ButtonSolid_success_round"
+                android:text="Success" />
+
+            <TextView
+                style="@style/BKTheme_ButtonSolid_success_square2"
+                android:text="SUCCESS" />
+
+            <Button
+                style="@style/BKTheme_ButtonBorder_success_square"
+                android:text="Success" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/BKTheme_ButtonSolid_warning_square"
+                android:text="Warning" />
+
+            <TextView
+                style="@style/BKTheme_ButtonSolid_warning_square2"
+                android:text="WARNING" />
+
+            <Button
+                style="@style/BKTheme_ButtonBorder_warning_round"
+                android:text="Warning" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/BKTheme_ButtonSolid_error_round"
+                android:text="Error" />
+
+            <TextView
+                style="@style/BKTheme_ButtonSolid_error_square2"
+                android:text="ERROR" />
+
+            <Button
+                style="@style/BKTheme_ButtonBorder_error_square"
+                android:text="Error" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/BKTheme_ButtonSolid_secondary_square"
+                android:text="Secondary" />
+
+            <TextView
+                style="@style/BKTheme_ButtonSolid_secondary_square2"
+                android:text="SECONDARY" />
+
+            <Button
+                style="@style/BKTheme_ButtonBorder_secondary_round"
+                android:text="Secondary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                style="@style/BKTheme_TabLayout_filter"
+                android:layout_margin="@dimen/_5bdp"
+                app:tabMode="scrollable">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Placed" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accepted" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dispatched" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rejected" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelled" />
+
+            </com.google.android.material.tabs.TabLayout>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
